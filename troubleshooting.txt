@@ -22,3 +22,7 @@ define( 'WP_HOME', 'http://example.com' );
 define( 'WP_SITEURL', 'http://example.com' );
 -----------------------------------------------------------------
 sumber: https://wordpress.org/documentation/article/changing-the-site-url/
+
+#Automation change your own EC2 IP
+define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
+define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
